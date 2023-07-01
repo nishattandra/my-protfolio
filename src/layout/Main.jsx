@@ -8,10 +8,12 @@ import Banner from '../sections/Banner/Banner';
 const Main = () => {
     return (
         <div>
-            <Design></Design>
+
             <Navbar></Navbar>
-            <Banner></Banner>
             <Outlet></Outlet>
+            <div className='fixed w-full h-full z-[-1]'>
+                <Design></Design>
+            </div>
         </div>
     );
 };
