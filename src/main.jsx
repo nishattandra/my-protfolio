@@ -7,12 +7,17 @@ import {
 } from "react-router-dom";
 import Main from './layout/Main';
 import About from './sections/About/About';
-import Home from './Home/Home';
+import Home from './sections/Home/Home';
+import ErrorPage from './sections/ErrorPage/ErrorPage';
+import Skills from './sections/Skills/Skills';
+import Projects from './sections/Projects/Projects';
+import Contact from './sections/Contact/Contact';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
     children:[
       {
         path:'/',
@@ -21,6 +26,18 @@ const router = createBrowserRouter([
       {
         path:'/about',
         element:<About></About>
+      },
+      {
+        path:'/skills',
+        element:<Skills></Skills>
+      },
+      {
+        path:'/projects',
+        element:<Projects></Projects>
+      },
+      {
+        path:'/contact',
+        element:<Contact></Contact>
       }
     ]
   },
