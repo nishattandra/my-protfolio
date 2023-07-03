@@ -10,8 +10,25 @@ import { Link } from 'react-router-dom';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { BsGithub } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
+import { saveAs } from 'file-saver';
 
 const Banner = () => {
+
+    const handleDownload = () => {
+        // Get the file ID from the Drive link
+        const fileId = '1l49Rwk8NUtCKKBbYxzagMq1fAv-dPqN5';
+
+        // Construct the direct download link
+        const downloadLink = `https://drive.google.com/uc?export=download&id=${fileId}`;
+
+        // Create a temporary link element
+        const link = document.createElement('a');
+        link.href = downloadLink;
+        link.download = 'resume.pdf';
+
+        // Simulate a click on the link to trigger the download
+        link.click();
+    };
     useEffect(() => {
         AOS.init();
     })
@@ -46,7 +63,8 @@ const Banner = () => {
                     <a href="https://github.com/nishattandra" target='_blank' rel="noreferrer"><BsGithub className='min-w-[3rem] min-h-[3rem] text-blue-400 mb-4 mr-10'></BsGithub></a>
                     <a href="https://www.linkedin.com/in/nishat-jahan-tandra-074633251/" target='_blank' rel="noreferrer"><BsLinkedin className='min-w-[3rem] min-h-[3rem] text-blue-400 mb-4'></BsLinkedin></a>
                 </div>
-                <a href='https://drive.google.com/uc?export=download&id=1l49Rwk8NUtCKKBbYxzagMq1fAv-dPqN5s' download className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border-0 text-white font-bold mt-9">Download Resume <FaDownload></FaDownload></a>
+                <button onClick={handleDownload}
+                    className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border-0 text-white font-bold mt-9">Download Resume <FaDownload></FaDownload></button>
                 <Link to='/about'>
                     <button className="ml-3 btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border-0 text-white font-bold mt-9">More About Me <FaArrowAltCircleRight></FaArrowAltCircleRight></button>
                 </Link>
