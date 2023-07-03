@@ -65,7 +65,7 @@ const Banner = () => {
                 <button onClick={handleDownload}
                     className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border-0 text-white font-bold mt-9">Download Resume <FaDownload></FaDownload></button>
                 <Link to='/about'>
-                    <button className="ml-3 btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border-0 text-white font-bold mt-9">More About Me <FaArrowAltCircleRight></FaArrowAltCircleRight></button>
+                    <button className="ml-3 btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border-0 text-white font-bold mt-9 mb-10">More About Me <FaArrowAltCircleRight></FaArrowAltCircleRight></button>
                 </Link>
             </div>
         </div>

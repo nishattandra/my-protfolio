@@ -33,7 +33,7 @@ const Skills = () => {
     return (
         <div >
             <h1 className='text-2xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-6 text-center font-bold '>MY SKILLS</h1>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-16 ml-16 md:ml-10 mt-20 mb-10 text-white skillContainer'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-16 ml-2 md:ml-10 mt-20 mb-10 text-white skillContainer'>
                 <div data-aos="fade-right">
                     <img src={html} alt="" />
                     <div className='absolute  space-y-9 w-1/2 pl-12 -mt-20'>
@@ -125,9 +125,9 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-            <div className='text-center mb-6'>
+            <div className='text-center mb-10'>
                 <Link  to='/projects'>
-                    <button className="ml-3 btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border-0 text-white font-bold mt-9">My Projects <FaArrowAltCircleRight></FaArrowAltCircleRight></button>
+                    <button className="ml-3 btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border-0 text-white font-bold mt-9 ">My Projects <FaArrowAltCircleRight></FaArrowAltCircleRight></button>
                 </Link>
             </div>
         </div>
