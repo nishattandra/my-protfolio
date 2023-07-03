@@ -22,6 +22,7 @@ import 'aos/dist/aos.css';
 
 import './Skills.css'
 import { Link } from 'react-router-dom';
+import useTitle from '../../hook/useTitle';
 
 
 const Skills = () => {
@@ -30,7 +31,10 @@ const Skills = () => {
         AOS.init();
     })
 
+    useTitle('SKILLS')
+
     return (
+        
         <div >
             <h1 className='text-2xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-6 text-center font-bold '>MY SKILLS</h1>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-16 ml-2 md:ml-10 mt-20 mb-10 text-white skillContainer'>
