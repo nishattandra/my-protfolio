@@ -14,7 +14,7 @@ const About = () => {
                 <div className='flex justify-center items-center md:w-1/2' >
                     <img className='' data-aos="zoom-out-down" src={img} alt="" />
                 </div>
-                <div className='text-white mt-10 md:mt-10 md:ml-36 md:w-1/2 ml-10' data-aos="zoom-in-down">
+                <div className='text-white mt-10  md:ml-36 md:w-1/2 m-3' data-aos="zoom-in-down">
                     <h1 className='text-2xl mb-6 font-bold '>Hi, I&apos;m Nishat Jahan Tandra.</h1>
                     <p>I am an undergrad student. Currently, I am doing my BSc in CSE at Jashore University of Science and Technology. I&apos;m particularly interested in web development as it relates to my academics. I&apos;ve been practicing web developing for the last six months, and I&apos;m currently enrolled in Programming Hero&apos;s complete web development course. I&apos;m also taking up other web development skills. For the front end, I&apos;ve studied HTML, CSS, Bootstrap, Tailwind, JavaScript, React, and React Roter. For the backend, I am proficient in Node.js and Express.js. For databases, I frequently use Firebase and Mongodb. I am also familiar with utilizing npm, git, GitHub, netlify, surge, and Firebase to deploy my projects.</p>
                     <p>My greatest strength is that I work really hard. I finish my task on time.I don&apos;t take a break till my task is done. New technology is not an issue for me at all. I like working in groups where I can share ideas with others and gain knowledge from them.I collaborate with my friends in groups on projects and presentations for academic purposes. I&apos;m an effective communicator. I am good at keeping things private.I have a strong passion for what I do.</p>

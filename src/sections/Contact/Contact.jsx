@@ -37,7 +37,7 @@ const Contact = () => {
                 <div className='w-1/2 md:mt-24 ml-6 md:ml-20'>
                     <div className='flex'>
                         <SlLocationPin className='min-w-[3.5rem] min-h-[3.5rem] text-blue-400 mb-4'></SlLocationPin>
-                        <span className='text-white font-bold text-2xl ml-8 mt-3'>SHH, JUST </span>
+                        <span className='text-white font-bold text-2xl ml-8 mt-3'>SHH,JUST </span>
                     </div>
                     <div className='flex'>
                         <FcCallback className='min-w-[3.5rem] min-h-[3.5rem] mb-4'></FcCallback>
