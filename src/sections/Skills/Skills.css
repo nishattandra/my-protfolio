@@ -1,0 +1,7 @@
+.skillContainer img{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}

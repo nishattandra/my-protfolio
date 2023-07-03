@@ -5,9 +5,11 @@ import project2 from '../../../src/assets/images/projects/assignment11.png'
 import project3 from '../../../src/assets/images/projects/assignment10.png'
 import { AiOutlineLink } from 'react-icons/ai';
 import { BsGithub } from 'react-icons/bs';
+import { FaArrowAltCircleRight } from 'react-icons/fa';
 
 import './Projects.css'
 import useTitle from '../../hook/useTitle';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
     useTitle('PROJECTS')
@@ -82,6 +84,11 @@ const Projects = () => {
                         <a className='flex btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border-0 text-white font-bold mt-9' href="https://github.com/nishattandra/food-hunter-server" target='_blank' rel="noreferrer">Server<BsGithub></BsGithub></a>
                     </div>
                 </div>
+            </div>
+            <div className='text-center mb-6'>
+                <Link to='/contact'>
+                    <button className="ml-3 btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border-0 text-white font-bold mt-9">Contact Me <FaArrowAltCircleRight></FaArrowAltCircleRight></button>
+                </Link>
             </div>
         </div>
     );

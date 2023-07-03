@@ -10,7 +10,6 @@ import { Link } from 'react-router-dom';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { BsGithub } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
-import { saveAs } from 'file-saver';
 
 const Banner = () => {
 

@@ -34,7 +34,7 @@ const Contact = () => {
         <div>
             <h1 className='text-2xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-6 text-center font-bold '>CONTACT ME</h1>
             <div className='grid grid-cols-1 md:grid-cols-2'>
-                <div className='w-1/2 mt-24 ml-16'>
+                <div className='w-1/2 md:mt-24 ml-6 md:ml-20'>
                     <div className='flex'>
                         <SlLocationPin className='min-w-[3.5rem] min-h-[3.5rem] text-blue-400 mb-4'></SlLocationPin>
                         <span className='text-white font-bold text-2xl ml-8 mt-3'>SHH, JUST </span>
